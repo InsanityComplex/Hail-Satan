@@ -51,16 +51,19 @@ public class Shrine : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && clickable)
         {
-            if (!on)
+            if (Physics.Raycast(ray))
             {
-                this.GetComponent<AudioSource>().Play();
-                on = true;
-            }
+                if (!on)
+                {
+                    this.GetComponent<AudioSource>().Play();
+                    on = true;
+                }
 
-            else
-            {
-                this.GetComponent<AudioSource>().Stop();
-                on = false;
+                else
+                {
+                    this.GetComponent<AudioSource>().Stop();
+                    on = false;
+                }
             }
         }
 
