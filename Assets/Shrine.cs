@@ -47,6 +47,8 @@ public class Shrine : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         if (Input.GetMouseButtonDown(0) && clickable)
         {
             if (!on)
@@ -54,6 +56,7 @@ public class Shrine : MonoBehaviour {
                 this.GetComponent<AudioSource>().Play();
                 on = true;
             }
+
             else
             {
                 this.GetComponent<AudioSource>().Stop();
