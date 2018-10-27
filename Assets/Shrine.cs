@@ -37,14 +37,14 @@ public class Shrine : MonoBehaviour {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && clickable && MouseOnObject)
+        if (Input.GetMouseButtonDown(0) && clickable)
         {
-            if (!on && Physics.Raycast(ray))
+            if (!on)
             {
                 this.GetComponent<AudioSource>().Play();
                 on = true;
             }
-            else if(on && Physics.Raycast(ray))
+            else if(on)
             {
                 this.GetComponent<AudioSource>().Stop();
                 on = false;
