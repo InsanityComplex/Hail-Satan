@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Shrine : MonoBehaviour {
 
     private bool clickable = false;
+    private bool MouseOnObject = false;
 
-	// Use this for initialization
-	void Start () {
+    private bool on = false;
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -26,17 +31,36 @@ public class Shrine : MonoBehaviour {
             clickable = false;
         }
     }
+ 
+    void OnMouseEnter()
+    {
+        MouseOnObject = true;
+        Debug.Log("Mouse On");
+    }
+
+    void OnMouseExit()
+    {
+        MouseOnObject = false;
+        Debug.Log("Mouse Off");
+    }
 
     // Update is called once per frame
     void Update () {
 
         if (Input.GetMouseButtonDown(0) && clickable)
         {
-            Debug.Log("Clicked");
-            this.GetComponent<AudioSource>().Play();
+            if (!on)
+            {
+                this.GetComponent<AudioSource>().Play();
+                on = true;
+            }
+            else
+            {
+                this.GetComponent<AudioSource>().Stop();
+                on = false;
+            }
         }
 
     }
-
 
 }
