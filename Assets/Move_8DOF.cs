@@ -17,26 +17,7 @@ public class Move_8DOF : MonoBehaviour {
 
         //really bad code but whatever
 
-        Vector3 heading = new Vector3();
-
-        if (Input.GetKey("w"))
-        {
-            heading += Vector3.forward;
-        }
-        if (Input.GetKey("s"))
-        {
-            heading += Vector3.back;
-        }
-
-        if(Input.GetKey("d"))
-        {
-            heading += Vector3.right;
-        }
-        if(Input.GetKey("a"))
-        {
-            heading += Vector3.left;
-        }
-
+        Vector3 heading = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         transform.position += heading.normalized * speed * Time.deltaTime;
 
     }
