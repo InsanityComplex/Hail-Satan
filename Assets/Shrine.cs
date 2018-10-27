@@ -31,30 +31,20 @@ public class Shrine : MonoBehaviour {
             clickable = false;
         }
     }
- 
-    void OnMouseEnter()
-    {
-        MouseOnObject = true;
-        Debug.Log("Mouse On");
-    }
-
-    void OnMouseExit()
-    {
-        MouseOnObject = false;
-        Debug.Log("Mouse Off");
-    }
 
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetMouseButtonDown(0) && clickable)
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Input.GetMouseButtonDown(0) && clickable && MouseOnObject)
         {
-            if (!on)
+            if (!on && Physics.Raycast(ray))
             {
                 this.GetComponent<AudioSource>().Play();
                 on = true;
             }
-            else
+            else if(on && Physics.Raycast(ray))
             {
                 this.GetComponent<AudioSource>().Stop();
                 on = false;
@@ -64,8 +54,3 @@ public class Shrine : MonoBehaviour {
     }
 
 }
-
-//get mouse position Input.mousePos
-//Ray r = Camera.main.ScreenPointToRay()
-//Phyiscs.Raycast(ray, out info)
-//do the thing
