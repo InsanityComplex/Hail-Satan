@@ -21,8 +21,16 @@ ModelImporter:
     4300000: rocks1_ROCK_037_LOD0
     4300002: rocks1_ROCK_037_LOD1
     4300004: rocks1_ROCK_037_LOD2
+    6400000: rocks1_ROCK_037_LOD0
+    6400002: rocks1_ROCK_037_LOD1
+    6400004: rocks1_ROCK_037_LOD2
     20500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldGridMaterial
+    second: {fileID: 2100000, guid: f5840bd8804730247b74cc2020a363df, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -58,7 +66,7 @@ ModelImporter:
     - 0.01
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
