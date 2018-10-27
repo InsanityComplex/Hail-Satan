@@ -33,6 +33,7 @@ public class Shrine : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && clickable)
         {
             Debug.Log("Clicked");
+            this.GetComponent<AudioSource>().Play();
         }
 
     }
