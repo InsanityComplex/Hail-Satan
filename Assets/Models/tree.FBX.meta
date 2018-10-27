@@ -27,7 +27,12 @@ ModelImporter:
     4300004: tree_LOD2
     4300006: tree_LOD3
     20500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldGridMaterial
+    second: {fileID: 2100000, guid: daa7e0831a20cda41bf4bd721f613fa3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
