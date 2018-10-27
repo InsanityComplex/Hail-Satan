@@ -9,18 +9,17 @@ public class Move_8DOF : MonoBehaviour {
     public float speed = 20.0f;
 
     CharacterController controller;
+    Animator anim;
 
-	// Use this for initialization
 	void Start () {
         controller = GetComponent<CharacterController>();
+        anim = GetComponentInChildren<Animator>();
 	}
 
-    // Update is called once per frame
     void Update() {
-
-        //really bad code but whatever
-
         Vector3 heading = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized * speed;
+        anim.SetInteger("Horizontal", (int)heading.x);
+        anim.SetInteger("Vertical", (int)heading.z);
         heading += Physics.gravity;
         controller.Move(heading * Time.deltaTime);
 

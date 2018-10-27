@@ -64,3 +64,8 @@ public class Shrine : MonoBehaviour {
     }
 
 }
+
+//get mouse position Input.mousePos
+//Ray r = Camera.main.ScreenPointToRay()
+//Phyiscs.Raycast(ray, out info)
+//do the thing
