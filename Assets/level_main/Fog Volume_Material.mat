@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Fog Volume_Material
   m_Shader: {fileID: 4800000, guid: 6040e6c91df9d9d47b7e5426d41a7471, type: 3}
-  m_ShaderKeywords: ABSORPTION JITTER SAMPLING_METHOD_ViewAligned Twirl Twirl_Y _FOG_GRADIENT
+  m_ShaderKeywords: ABSORPTION JITTER SAMPLING_METHOD_ViewAligned Twirl Twirl_Y VOLUME_FOG
     _FOG_VOLUME_NOISE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
