@@ -20,9 +20,9 @@ public class Move_8DOF : MonoBehaviour {
 
         //really bad code but whatever
 
-        Vector3 heading = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        heading += Physics.gravity;
-        controller.Move(heading.normalized * speed * Time.deltaTime);
+        Vector3 heading = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized * speed;
+        heading += Physics.gravity * Time.deltaTime;
+        controller.Move(heading * Time.deltaTime);
 
     }
 }
