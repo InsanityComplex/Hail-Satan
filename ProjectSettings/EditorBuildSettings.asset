@@ -5,10 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/test fog.unity
-    guid: 0efe879c128c6344694b4592f5a3f981
+    path: Assets/level_main.unity
+    guid: 3d7032c0daedba548b4dce7e7b00cde8
   m_configObjects: {}
