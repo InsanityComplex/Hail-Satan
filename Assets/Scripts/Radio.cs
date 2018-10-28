@@ -5,20 +5,19 @@ using UnityEngine.EventSystems;
 
 public class Radio : MonoBehaviour {
 
-    private bool clickable = false;
-    public bool MouseOnObject = false;
-
-    public bool on = false;
     public Dialogue[] Words;
     public bool UseAnimator;
     public bool UseAudio;
 
+    bool clickable;
+    bool on;
     bool setCompletition;
     bool firstEnable;
+
     Animator anim;
     AudioSource source;
     DialogueManager dMan;
-    // Use this for initialization
+
     void Start(){
         anim = GetComponentInChildren<Animator>();
         source = GetComponent<AudioSource>();
@@ -54,44 +53,37 @@ public class Radio : MonoBehaviour {
                 if (info.collider.gameObject.name == gameObject.name && clickable)
                 {
                     on = !on;
+                    if (UseAnimator)
+                    {
+                        anim.SetBool("on", on);
+                    }
+
                     if (!setCompletition)
                     {
                         GameObject.Find("Player").SendMessage("UpdateCompletition");
                         setCompletition = true;
                     }
-                    if (dMan.IsDialogueActive())
+
+                    if (dMan.IsDialogueActive() && !on)
                     {
                         dMan.EndDialogue();
                     }
-                    else
+                    else if (on)
                     {
                         dMan.StartDialogue(new Queue<Dialogue>(Words));
                         firstEnable = false;
                     }
+
+                    if (UseAudio && source.isPlaying && !on)
+                    { 
+                        source.Stop();
+                    }
+                    else if (UseAudio && !source.isPlaying && on)
+                    {
+                        source.Play();
+                    }
                 }
             }
-        }
-        if(on)
-        {
-            if(UseAudio && !source.isPlaying)
-            {
-                source.Play();
-            }
-            if(!firstEnable)
-            {
-                firstEnable = true;
-            }
-        }
-        else if(!on)
-        {
-            if(UseAudio && source.isPlaying)
-            {
-                source.Stop();
-            }
-        }
-        if (UseAnimator)
-        {
-            anim.SetBool("on", on);
         }
     }
 }

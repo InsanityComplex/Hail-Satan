@@ -86,7 +86,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 67fa90b2864f71e448d26108604926a8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -199,8 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a496f66eac73418cc967bbcc93ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseOnObject: 0
-  on: 0
   Words:
   - Sentence: YOOO THAT NOT TV DOPE AF MY DUDE
     Speaker: Satan
@@ -208,6 +206,8 @@ MonoBehaviour:
     - Thanks bruh
     - Thanks bruh!
     - Thanks bruh XD
+  UseAnimator: 1
+  UseAudio: 1
 --- !u!114 &114248151880217584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,7 +259,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bfc183dd4fdaaf64f9d57be19188deaf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -278,7 +278,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300006, guid: bbf02fb3fb6a24851a559a8c7bd87982, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
