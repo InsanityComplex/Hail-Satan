@@ -39,8 +39,8 @@ GameObject:
   - component: {fileID: 4006858225626790}
   - component: {fileID: 135437360820876356}
   - component: {fileID: 114123056673292768}
-  - component: {fileID: 82577615887088404}
   - component: {fileID: 136155663999728272}
+  - component: {fileID: 82427192313057216}
   m_Layer: 0
   m_Name: radio_shrine 1
   m_TagString: Untagged
@@ -75,7 +75,7 @@ Transform:
   m_Father: {fileID: 4006858225626790}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82577615887088404
+--- !u!82 &82427192313057216
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,13 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a496f66eac73418cc967bbcc93ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Words:
-  - Sentence: YOOO THAT NOT TV DOPE AF MY DUDE
-    Speaker: Satan
-    Choices:
-    - Thanks bruh
-    - Thanks bruh!
-    - Thanks bruh XD
+  Default: []
+  DefaultAudio: {fileID: 0}
+  Dialogues:
+  - Name: Goosebumps
+    Conversations: []
+    Audio: {fileID: 8300000, guid: 67fa90b2864f71e448d26108604926a8, type: 3}
+  - Name: Report
+    Conversations: []
+    Audio: {fileID: 8300000, guid: 682075fd16c6be7428dd37d64e18ddcd, type: 3}
   UseAnimator: 1
   UseAudio: 1
 --- !u!114 &114248151880217584

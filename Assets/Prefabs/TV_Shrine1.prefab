@@ -210,9 +210,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a496f66eac73418cc967bbcc93ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Words: []
-  UseAnimator: 0
-  UseAudio: 0
+  Default: []
+  DefaultAudio: {fileID: 0}
+  Dialogues:
+  - Name: Ice Cream
+    Conversations:
+    - Sentence: There's good reason for my glistening skin.
+      Speaker: 
+      Choices: []
+    - Sentence: And how I shine and how my pores are so clean and clear.
+      Speaker: 
+      Choices: []
+    - Sentence: I stay light on my feet.
+      Speaker: 
+      Choices: []
+    - Sentence: I spring from activity to activity.
+      Speaker: 
+      Choices: []
+    - Sentence: I love my job. I love my life.
+      Speaker: 
+      Choices: []
+    - Sentence: When you eat Little Baby's Ice Cream, you'll jump and dance  and sing
+        and hug eachother with great enthusiam.
+      Speaker: 
+      Choices: []
+    - Sentence: This is a special time.
+      Speaker: 
+      Choices: []
+    - Sentence: Little Baby's Ice Cream
+      Speaker: 
+      Choices: []
+    Audio: {fileID: 8300000, guid: c956f2cc3d0f20f48ad9df7e065a41b6, type: 3}
+  - Name: Ants
+    Conversations:
+    - Sentence: I'm Ants in my Eyes Johnson here at Ants in my Eyes Johnson Electronics!
+      Speaker: 
+      Choices: []
+    - Sentence: I mean, there's so many ants in my eyes and there's so many TV's,
+        microwaves, radios... I think.
+      Speaker: 
+      Choices: []
+    - Sentence: I'm not 100% sure what we have in stock because I can't see anything!
+      Speaker: 
+      Choices: []
+    - Sentence: Our prices, I hope, aren't too low.
+      Speaker: 
+      Choices: []
+    - Sentence: I'm Ants in my Eyes Johnson!
+      Speaker: 
+      Choices: []
+    - Sentence: Everything's black. I can't see a thing.
+      Speaker: 
+      Choices: []
+    - Sentence: And I can't feel anything, but that's not as catchy.
+      Speaker: 
+      Choices: []
+    Audio: {fileID: 8300000, guid: c956f2cc3d0f20f48ad9df7e065a41b6, type: 3}
+  - Name: Missing
+    Conversations:
+    - Sentence: Police have reported the disapperance five teenagers,
+      Speaker: 
+      Choices: []
+    - Sentence: All of whom were last seen entering Burnt Chapel Forest.
+      Speaker: 
+      Choices: []
+    - Sentence: Search parties have been active as of last night.
+      Speaker: 
+      Choices: []
+    - Sentence: For your saftey, we advise everyone to stay out of the w-
+      Speaker: 
+      Choices: []
+    - Sentence: (The transmition cuts to black.)
+      Speaker: 
+      Choices: []
+    Audio: {fileID: 8300000, guid: c956f2cc3d0f20f48ad9df7e065a41b6, type: 3}
+  UseAnimator: 1
+  UseAudio: 1
 --- !u!135 &135288231200720522
 SphereCollider:
   m_ObjectHideFlags: 1
