@@ -13,6 +13,7 @@ public class Radio : MonoBehaviour {
     public bool UseAnimator;
     public bool UseAudio;
 
+    bool setCompletition;
     bool firstEnable;
     Animator anim;
     AudioSource source;
@@ -53,6 +54,11 @@ public class Radio : MonoBehaviour {
                 {
                     on = !on; 
                 }
+                if (!setCompletition)
+                {
+                    GameObject.Find("Player").SendMessage("UpdateCompletition");
+                    setCompletition = true;
+                }
             }
         }
         if(on)
@@ -72,8 +78,10 @@ public class Radio : MonoBehaviour {
             {
                 source.Stop();
             }
-            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
-
+            if (!firstEnable)
+            {
+                GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
+            }
         }
         if (UseAnimator)
         {
@@ -85,6 +93,7 @@ public class Radio : MonoBehaviour {
         {
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(Words));
             firstEnable = false;
+            Words = new Dialogue[0];
         }
     }
 }

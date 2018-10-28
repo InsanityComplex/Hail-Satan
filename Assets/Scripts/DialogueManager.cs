@@ -87,16 +87,16 @@ public class DialogueManager : MonoBehaviour {
 
 	public void EndDialogue() 
 	{
-        Debug.Log("ending dialogue");
-		DialoguePanel.gameObject.SetActive(false);
+        Phone.Show = false;
+        DialoguePanel.gameObject.SetActive(false);
 		ChoicePanel.gameObject.SetActive(false);
-		foreach (GameObject g in ObjectsToDisable) {
+        
+        foreach (GameObject g in ObjectsToDisable) {
 			g.SetActive(true);
 		}
 		foreach (GroupDisable g in ScriptsToDisable) {
 			g.enabled  = true;
 		}
-        Phone.Show = false;
         dialogueQueue = null;
     }
 
