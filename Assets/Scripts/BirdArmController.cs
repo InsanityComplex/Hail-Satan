@@ -16,17 +16,17 @@ public class BirdArmController : MonoBehaviour {
 	void FixedUpdate () {
         Vector3 mousePos = Input.mousePosition;
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 2));
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(mousePos);
             RaycastHit info;
-            if (Physics.Raycast(mouseRay, out info, Mathf.Infinity, Physics.AllLayers, QueryTriggerInteraction.UseGlobal) && info.rigidbody.gameObject.name == "bird_wing")
+            if (hand == null && Physics.Raycast(mouseRay, out info, Mathf.Infinity, Physics.AllLayers, QueryTriggerInteraction.UseGlobal) && info.rigidbody.gameObject.name == "bird_wing")
             {
                 hand = info.rigidbody;
                 hand.gameObject.layer = 14;
             }
         }
-        else if (Input.GetMouseButtonUp(0))
+        else
         {
             if (hand)
             {

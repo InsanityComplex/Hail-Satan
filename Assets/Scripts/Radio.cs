@@ -10,6 +10,7 @@ public class Radio : MonoBehaviour {
 
     public bool on = false;
     public Dialogue[] Words;
+    public bool UseAnimator;
 
     bool firstEnable;
     Animator anim;
@@ -66,7 +67,12 @@ public class Radio : MonoBehaviour {
             source.Stop();
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
         }
-        anim.SetBool("on", on);
+
+        if (UseAnimator)
+        {
+            anim.SetBool("on", on);
+        }
+        
         if (firstEnable && Words.Length > 0)
         {
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(Words));
