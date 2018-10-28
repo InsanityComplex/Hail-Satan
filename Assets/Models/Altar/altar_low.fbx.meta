@@ -21,6 +21,9 @@ ModelImporter:
     4300000: altar_low
     4300002: pillar_low
     4300004: base_low
+    6400000: altar_low
+    6400002: base_low
+    6400004: pillar_low
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -59,7 +62,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
