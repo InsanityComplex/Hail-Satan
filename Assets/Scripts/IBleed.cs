@@ -9,7 +9,7 @@ public class IBleed : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.name == "knife")
+        if (collision.collider.gameObject.name == "knife" && collision.relativeVelocity.magnitude > 2.5f)
         {
             GetComponent<SpriteRenderer>().sprite = BleedingSprite;
             transform.GetChild(0).gameObject.SetActive(true);
