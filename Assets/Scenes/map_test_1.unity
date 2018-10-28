@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0040157097, g: 0.0002191715, b: 0.000000053001237,
+  m_IndirectSpecularColor: {r: 0.004015708, g: 0.00021917134, b: 0.000000053001237,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -279,6 +279,11 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224773336215009208, guid: b9da60ca7df7d384cb5ab4036315d5e0,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9da60ca7df7d384cb5ab4036315d5e0, type: 2}
   m_IsPrefabAsset: 0
@@ -446,6 +451,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4006858225626790, guid: 5565aab1b9d7b1d43991b855e1b20295, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.55
@@ -482,9 +492,130 @@ Prefab:
       propertyPath: m_Name
       value: radio_shrine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Name
+      value: Goosebumps
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Name
+      value: Report
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 67fa90b2864f71e448d26108604926a8, type: 3}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 682075fd16c6be7428dd37d64e18ddcd, type: 3}
+    m_RemovedComponents:
+    - {fileID: 82577615887088404, guid: 5565aab1b9d7b1d43991b855e1b20295, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5565aab1b9d7b1d43991b855e1b20295, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1413525576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1403041321296280, guid: 5565aab1b9d7b1d43991b855e1b20295,
+    type: 2}
+  m_PrefabInternal: {fileID: 981463664}
+--- !u!82 &1413525578
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413525576}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 67fa90b2864f71e448d26108604926a8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1650303218
 Prefab:
   m_ObjectHideFlags: 0
@@ -651,6 +782,26 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4034320576812078, guid: 0f6e099b4dc48654a95b524712b0aaad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.312607
@@ -682,6 +833,153 @@ Prefab:
     - target: {fileID: 4034320576812078, guid: 0f6e099b4dc48654a95b524712b0aaad, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: UseAnimator
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: UseAudio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Name
+      value: Ice Cream
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: ccbdd6fac1503524fba306b4df6b93ee, type: 3}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[0].Sentence
+      value: There's good reason for my glistening skin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[1].Sentence
+      value: And how I shine and how my pores are so clean and clear.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[2].Sentence
+      value: I stay light on my feet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[3].Sentence
+      value: I spring from activity to activity.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[4].Sentence
+      value: I love my job. I love my life.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[5].Sentence
+      value: When you eat Little Baby's Ice Cream, you'll jump and dance  and sing
+        and hug eachother with great enthusiam.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[6].Sentence
+      value: This is a special time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[7].Sentence
+      value: Little Baby's Ice Cream
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Name
+      value: Ants
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: ccbdd6fac1503524fba306b4df6b93ee, type: 3}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[0].Speaker
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[0].Sentence
+      value: I'm Ants in my Eyes Johnson here at Ants in my Eyes Johnson Electronics!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Sentence
+      value: I mean, there's so many ants in my eyes and there's so many TV's, microwaves,
+        radios... I think.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[2].Sentence
+      value: I'm not 100% sure what we have in stock because I can't see anything!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[3].Sentence
+      value: Our prices, I hope, aren't too low.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[4].Sentence
+      value: I'm Ants in my Eyes Johnson!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[5].Sentence
+      value: Everything's black. I can't see a thing.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[6].Sentence
+      value: And I can't feel anything, but that's not as catchy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Name
+      value: Missing
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: ccbdd6fac1503524fba306b4df6b93ee, type: 3}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.data[0].Sentence
+      value: Police have reported the disapperance five teenagers,
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.data[1].Sentence
+      value: All of whom were last seen entering Burnt Chapel Forest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.data[2].Sentence
+      value: Search parties have been active as of last night.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.data[3].Sentence
+      value: For your saftey, we advise everyone to stay out of the w-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114823264237348314, guid: 0f6e099b4dc48654a95b524712b0aaad,
+        type: 2}
+      propertyPath: Dialogues.Array.data[2].Conversations.Array.data[4].Sentence
+      value: (The transmition cuts to black.)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6e099b4dc48654a95b524712b0aaad, type: 2}
