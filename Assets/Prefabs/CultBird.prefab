@@ -118,6 +118,7 @@ MonoBehaviour:
   on: 0
   Words: []
   UseAnimator: 0
+  UseAudio: 0
 --- !u!135 &135175633749585070
 SphereCollider:
   m_ObjectHideFlags: 1

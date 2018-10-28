@@ -55,25 +55,32 @@ public class Radio : MonoBehaviour {
                 }
             }
         }
-        if (on && UseAudio && !source.isPlaying)
+        if(on)
         {
-            if (!firstEnable)
+            if(UseAudio && !source.isPlaying)
+            {
+                source.Play();
+            }
+            if(!firstEnable)
             {
                 firstEnable = true;
             }
-            source.Play();
         }
-        else if (UseAudio && source.isPlaying && !on)
+        else if(!on)
         {
-            source.Stop();
+            if(UseAudio && source.isPlaying)
+            {
+                source.Stop();
+            }
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
-        }
 
+        }
         if (UseAnimator)
         {
             anim.SetBool("on", on);
         }
         
+
         if (firstEnable && Words.Length > 0)
         {
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(Words));
