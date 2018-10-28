@@ -21,7 +21,12 @@ ModelImporter:
     4300000: altar_low
     4300002: pillar_low
     4300004: base_low
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 868f2e77b8b0ebd48b2b4cbf689ba61d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
