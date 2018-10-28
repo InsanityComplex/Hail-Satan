@@ -17,11 +17,12 @@ public class Radio : MonoBehaviour {
     bool firstEnable;
     Animator anim;
     AudioSource source;
+    DialogueManager dMan;
     // Use this for initialization
     void Start(){
         anim = GetComponentInChildren<Animator>();
         source = GetComponent<AudioSource>();
-        
+        dMan = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -52,12 +53,21 @@ public class Radio : MonoBehaviour {
             {
                 if (info.collider.gameObject.name == gameObject.name && clickable)
                 {
-                    on = !on; 
-                }
-                if (!setCompletition)
-                {
-                    GameObject.Find("Player").SendMessage("UpdateCompletition");
-                    setCompletition = true;
+                    on = !on;
+                    if (!setCompletition)
+                    {
+                        GameObject.Find("Player").SendMessage("UpdateCompletition");
+                        setCompletition = true;
+                    }
+                    if (dMan.IsDialogueActive())
+                    {
+                        dMan.EndDialogue();
+                    }
+                    else
+                    {
+                        dMan.StartDialogue(new Queue<Dialogue>(Words));
+                        firstEnable = false;
+                    }
                 }
             }
         }
@@ -78,22 +88,10 @@ public class Radio : MonoBehaviour {
             {
                 source.Stop();
             }
-            if (!firstEnable)
-            {
-                GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
-            }
         }
         if (UseAnimator)
         {
             anim.SetBool("on", on);
-        }
-        
-
-        if (firstEnable && Words.Length > 0)
-        {
-            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(Words));
-            firstEnable = false;
-            Words = new Dialogue[0];
         }
     }
 }

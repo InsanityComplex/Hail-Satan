@@ -87,16 +87,19 @@ public class DialogueManager : MonoBehaviour {
 
 	public void EndDialogue() 
 	{
-        Phone.Show = false;
+        foreach (GameObject g in ObjectsToDisable)
+        {
+            g.SetActive(true);
+        }
+        foreach (GroupDisable g in ScriptsToDisable)
+        {
+            g.enabled = true;
+        }
+        StopAllCoroutines();
+
         DialoguePanel.gameObject.SetActive(false);
 		ChoicePanel.gameObject.SetActive(false);
-        
-        foreach (GameObject g in ObjectsToDisable) {
-			g.SetActive(true);
-		}
-		foreach (GroupDisable g in ScriptsToDisable) {
-			g.enabled  = true;
-		}
+        Phone.Show = false;
         dialogueQueue = null;
     }
 
@@ -123,7 +126,7 @@ public class DialogueManager : MonoBehaviour {
 
     public bool IsDialogueActive()
     {
-        return currentDialogue != null && dialogueQueue.Count > 0;
+        return dialogueQueue != null;
     }
 
 	void Update() 

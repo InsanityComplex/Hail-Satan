@@ -10,10 +10,12 @@ public class PhonePopUp : MonoBehaviour {
     public bool Show;
     bool beginningDialogue;
 
+    DialogueManager dMan;
     RectTransform rect;
     private void Start()
     {
-        rect = GetComponent<RectTransform>();   
+        rect = GetComponent<RectTransform>();
+        dMan = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
     }
 
     void Update () {
@@ -21,7 +23,7 @@ public class PhonePopUp : MonoBehaviour {
         rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, cameraTarget, MoveTime);
         if (Show && Vector3.Distance(rect.anchoredPosition, cameraTarget) < 10f && !beginningDialogue)
         {
-            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().BeginDialogue();
+            dMan.BeginDialogue();
             beginningDialogue = true;
         }
         else if (!Show)
