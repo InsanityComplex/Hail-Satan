@@ -116,7 +116,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MouseOnObject: 0
   on: 0
-  Words: []
+  Words:
+  - Sentence: '*Snap*...*Snap*...*Snap*...'
+    Speaker: Snapping Bird
+    Choices:
+    - '...'
   UseAnimator: 0
   UseAudio: 0
 --- !u!135 &135175633749585070
@@ -129,7 +133,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136659587847481430
 CapsuleCollider:
@@ -178,7 +182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: 2793e16a021e840e692beb1cfd350d67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
