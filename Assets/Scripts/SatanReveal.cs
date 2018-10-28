@@ -21,6 +21,7 @@ public class SatanReveal : MonoBehaviour {
 
     public void MessWithPostProcessing()
     {
+        GetComponent<AudioSource>().Play();
         ab = ScriptableObject.CreateInstance<ChromaticAberration>();
         v = ScriptableObject.CreateInstance<Vignette>();
         ab.enabled.Override(true);
