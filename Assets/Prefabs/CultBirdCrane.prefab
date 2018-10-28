@@ -114,18 +114,131 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a496f66eac73418cc967bbcc93ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseOnObject: 0
-  on: 0
-  Words:
-  - Sentence: Hey there dude. You wanna summon satan? Well, there's two altars down
-      the road you'll need to look at first. But I already did it, so it's not even
-      the cool thing to do anymore.
-    Speaker: Coffee-Drinking cultist
-    Choices:
-    - Pff, yeah, whatever.
-    - '...'
-    - Sweet! I'm off to summon satan! Thanks a million!
-  UseAnimator: 0
+  Default: []
+  DefaultAudio: {fileID: 0}
+  Dialogues:
+  - Name: TJ
+    Conversations:
+    - Sentence: "Hey\u2026 I don\u2019t usually summon demons before my coffee break,
+        but today of all days is different..."
+      Speaker: TJ
+      Choices:
+      - Different how?
+      - "I\u2019m not sure I\u2019m catching your drift?"
+      - "I\u2019m sorry, what?!?"
+    - Sentence: "That damn barista got my order wrong! It\u2019s a double caramel
+        moccahiato with extra virgin blood! And she forgot the blood! Like the bloods
+        the best part or why even bother to pay the extra soul contract  to get! I
+        might as well get freak\u2019n regular double caramel moccahiato! I ordered
+        it because today of all days is different!"
+      Speaker: TJ
+      Choices:
+      - But HOW is today different!?!
+      - "That sounds like a personal problem, that I\u2019ll have to direct you to
+        my secretary"
+    - Sentence: "You don\u2019t get it! She never gets my order wrong! I can just
+        feel it in my bones that somethings going to end. "
+      Speaker: TJ
+      Choices: []
+    - Sentence: " Its The voices\u2026 they whisper around these woods and nothing
+        ever turns alright in the end\u2026 Find the radio and you\u2019ll what I
+        mean!"
+      Speaker: TJ
+      Choices: []
+    Audio: {fileID: 0}
+  - Name: extinct
+    Conversations:
+    - Sentence: "So while I was drinking this cup of TERRIBLE coffee\u2026 it occurred
+        to me, what if this ritual cost us? Like not just you, me and Tommy but the
+        entire living bird race?"
+      Speaker: TJ
+      Choices:
+      - " Not now TJ! I don\u2019t have time for this!"
+      - uhhhhh, I hope not!
+      - "oh lord, where are you going with this\u2026"
+    - Sentence: But! You see, there have been thousands of Mass extinctions on this
+        planet before we where born, Our earliest of records foretold them spanning
+        millions of years ago.
+      Speaker: TJ
+      Choices: []
+    - Sentence: " From what we know more than 90% of all organisms that ever lived
+        on Earth are extinct as new species evolve to fit the ever changing ecological
+        niches.\u201D"
+      Speaker: TJ
+      Choices: []
+    - Sentence: "Creatures lives ending without any comprehension of how they were
+        dying out. No control on how they where going to die.\u201D"
+      Speaker: TJ
+      Choices: []
+    - Sentence: ' Even our majestic and powerful Ancestors, the Dinosaurs, fell victim
+        to this tragedy. And because of that we rose out of their ashes that led to
+        this!'
+      Speaker: 
+      Choices:
+      - "TJ you\u2019re missing out on some HUGE gaps of history right there!"
+      - I am completely lost in what you are trying to tell me
+    - Sentence: "This ritual is a choice Carrie, maybe its the only significant choice
+        we\u2019ll ever get in comparison to our kinds  inevitable extinction!\u201D"
+      Speaker: TJ
+      Choices: []
+    - Sentence: "If we do die, I prefer this, than dying at the hands of nuclear war\u2026"
+      Speaker: TJ
+      Choices:
+      - well you must be a joy at parties TJ
+      - Oh joy, glad to know your with us.
+    - Sentence: "He is calling us\u2026"
+      Speaker: TJ
+      Choices:
+      - Who!?!
+      - '"He"? who''s "He"?'
+    - Sentence: 
+      Speaker: 
+      Choices: []
+    - Sentence: '....'
+      Speaker: TJ
+      Choices:
+      - Uh, HELLO!?!
+    - Sentence: Huh?
+      Speaker: TJ
+      Choices:
+      - what are you even talking about!?!
+    - Sentence: About what?
+      Speaker: 
+      Choices:
+      - You mentioned a foreboding "He" is watching us
+      - All that talk about our inevitable extinction!
+    - Sentence: "I don\u2019t recall talking to you about that\u2026 yeah, that last
+        thing I told you was to look for the radio"
+      Speaker: TJ
+      Choices:
+      - '...'
+    Audio: {fileID: 0}
+  - Name: original
+    Conversations:
+    - Sentence: "I don\u2019t mean to brag but I\u2019ve been a member of this cult
+        before it was cool."
+      Speaker: TJ
+      Choices:
+      - Excuse me!?!
+      - Why, aren;t you special
+      - Does that even matter
+    - Sentence: "I\u2019m just saying that I can tell when somebody is here for the
+        attention."
+      Speaker: TJ
+      Choices:
+      - "are you sure you didn\u2019t just describe yourself"
+      - Why does this even matter!?!
+    - Sentence: People sign up into some deep weird shit without knowing what they're
+        getting into... are you sure you know what you're doing
+      Speaker: TJ
+      Choices:
+      - yeah yeah , I know what I'm doing
+      - fuck you!
+    - Sentence: 'hmp! HE doesn''t seem to trust your intions '
+      Speaker: TJ
+      Choices: []
+    Audio: {fileID: 0}
+  UseAnimator: 1
   UseAudio: 0
 --- !u!135 &135712151387633054
 SphereCollider:
