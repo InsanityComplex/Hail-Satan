@@ -37,6 +37,10 @@ public class BirdArmController : MonoBehaviour {
 
         if (hand)
         {
+            if (Vector3.Distance(transform.position, hand.transform.position) < 0.25f)
+            {
+                hand.AddForce(Vector3.zero, ForceMode.VelocityChange);
+            }
             hand.AddForce((transform.position - hand.transform.position) * DragStrength * Vector3.Distance(transform.position, hand.transform.position));
         }
     }
