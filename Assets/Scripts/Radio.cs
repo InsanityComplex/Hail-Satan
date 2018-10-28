@@ -5,10 +5,12 @@ using UnityEngine.EventSystems;
 
 public class Radio : MonoBehaviour {
 
-    public Dialogue[] Words;
+    public Dialogue[] Default;
+    public DialogueContainer[] Dialogues;
     public bool UseAnimator;
     public bool UseAudio;
 
+    int currentConversation;
     bool clickable;
     bool on;
     bool setCompletition;
@@ -70,7 +72,16 @@ public class Radio : MonoBehaviour {
                     }
                     else if (on)
                     {
-                        dMan.StartDialogue(new Queue<Dialogue>(Words));
+                        if (currentConversation > Dialogues.Length)
+                        {
+                            dMan.StartDialogue(new Queue<Dialogue>(Default));
+                        }
+                        else
+                        {
+                            dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
+                            currentConversation++;
+                        }
+                        
                         firstEnable = false;
                     }
 

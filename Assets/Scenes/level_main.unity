@@ -970,6 +970,161 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ca06e5813f96e8540aea29640468acad,
     type: 3}
   m_PrefabInternal: {fileID: 150448250}
+--- !u!43 &167966481
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Fog Volume
+  serializedVersion: 9
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 36
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 24
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 250, y: 20, z: 250}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0300010000000300020001000700050004000700060005000b00090008000b000a0009000f000d000c000f000e000d00130011001000130012001100170015001400170016001500
+  m_VertexData:
+    serializedVersion: 2
+    m_VertexCount: 24
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 768
+    _typelessdata: 00007ac30000a0c100007a4300000000000080bf000000000000803f0000803f00007a430000a0c100007a4300000000000080bf00000000000000000000803f00007a430000a0c100007ac300000000000080bf00000000000000000000000000007ac30000a0c100007ac300000000000080bf000000000000803f0000000000007ac30000a04100007ac3000080bf00000000000000000000803f0000803f00007ac30000a04100007a43000080bf0000000000000000000000000000803f00007ac30000a0c100007a43000080bf0000000000000000000000000000000000007ac30000a0c100007ac3000080bf00000000000000000000803f0000000000007ac30000a04100007a4300000000000000000000803f0000803f0000803f00007a430000a04100007a4300000000000000000000803f000000000000803f00007a430000a0c100007a4300000000000000000000803f000000000000000000007ac30000a0c100007a4300000000000000000000803f0000803f0000000000007a430000a04100007ac30000000000000000000080bf0000803f0000803f00007ac30000a04100007ac30000000000000000000080bf000000000000803f00007ac30000a0c100007ac30000000000000000000080bf000000000000000000007a430000a0c100007ac30000000000000000000080bf0000803f0000000000007a430000a04100007a430000803f00000000000000000000803f0000803f00007a430000a04100007ac30000803f0000000000000000000000000000803f00007a430000a0c100007ac30000803f0000000000000000000000000000000000007a430000a0c100007a430000803f00000000000000000000803f0000000000007ac30000a04100007ac3000000000000803f000000000000803f0000803f00007a430000a04100007ac3000000000000803f00000000000000000000803f00007a430000a04100007a43000000000000803f00000000000000000000000000007ac30000a04100007a43000000000000803f000000000000803f00000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 250, y: 20, z: 250}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimized: 0
 --- !u!28 &191810442
 Texture2D:
   m_ObjectHideFlags: 0
@@ -2978,6 +3133,11 @@ Prefab:
         type: 2}
       propertyPath: m_Range
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 224230368603032406, guid: b9da60ca7df7d384cb5ab4036315d5e0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.0000153
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9da60ca7df7d384cb5ab4036315d5e0, type: 2}
@@ -6009,7 +6169,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1810464949}
-  m_Mesh: {fileID: 1942847238}
+  m_Mesh: {fileID: 167966481}
 --- !u!114 &1810464953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6504,6 +6664,56 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4006858225626790, guid: 5565aab1b9d7b1d43991b855e1b20295, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.416092
@@ -6536,6 +6746,231 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Sentence
+      value: hEY THIS A SENTENCE IN ALL CAPS
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Speaker
+      value: My name is Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[1].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[2].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[3].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[4].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[5].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[6].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[7].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[8].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Sentence
+      value: YOOO THAT NOT TV DOPE AF MY DUDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Speaker
+      value: Satan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Choices.Array.data[0]
+      value: Thanks bruh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Choices.Array.data[1]
+      value: Thanks bruh!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123056673292768, guid: 5565aab1b9d7b1d43991b855e1b20295,
+        type: 2}
+      propertyPath: Words.Array.data[9].Choices.Array.data[2]
+      value: Thanks bruh XD
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5565aab1b9d7b1d43991b855e1b20295, type: 2}
   m_IsPrefabAsset: 0
@@ -6546,6 +6981,31 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1532716940}
     m_Modifications:
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[2].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Choices.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4095466642707022, guid: f385f7d36b6cc89439987d042cf732d5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.817
@@ -6577,6 +7037,81 @@ Prefab:
     - target: {fileID: 4095466642707022, guid: f385f7d36b6cc89439987d042cf732d5, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Name
+      value: Test 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[0].Sentence
+      value: yo wtf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[0].Speaker
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[1].Sentence
+      value: 'test2 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[1].Speaker
+      value: heyo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[2].Sentence
+      value: test 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[2].Speaker
+      value: ggggg
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[0].Conversations.Array.data[2].Choices.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Name
+      value: test 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[0].Sentence
+      value: asdhf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[0].Speaker
+      value: asdkljfh
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Sentence
+      value: asdljkf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Speaker
+      value: asdlkjfkj
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Choices.Array.data[1]
+      value: asdf
+      objectReference: {fileID: 0}
+    - target: {fileID: 114876587712184202, guid: f385f7d36b6cc89439987d042cf732d5,
+        type: 2}
+      propertyPath: Dialogues.Array.data[1].Conversations.Array.data[1].Choices.Array.data[0]
+      value: asdf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f385f7d36b6cc89439987d042cf732d5, type: 2}
@@ -6951,161 +7486,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6f5e5d39c96c34c4cbefe68e4d782120,
     type: 3}
   m_PrefabInternal: {fileID: 1925683889}
---- !u!43 &1942847238
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Fog Volume
-  serializedVersion: 9
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 36
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 24
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 250, y: 20, z: 250}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 0300010000000300020001000700050004000700060005000b00090008000b000a0009000f000d000c000f000e000d00130011001000130012001100170015001400170016001500
-  m_VertexData:
-    serializedVersion: 2
-    m_VertexCount: 24
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 768
-    _typelessdata: 00007ac30000a0c100007a4300000000000080bf000000000000803f0000803f00007a430000a0c100007a4300000000000080bf00000000000000000000803f00007a430000a0c100007ac300000000000080bf00000000000000000000000000007ac30000a0c100007ac300000000000080bf000000000000803f0000000000007ac30000a04100007ac3000080bf00000000000000000000803f0000803f00007ac30000a04100007a43000080bf0000000000000000000000000000803f00007ac30000a0c100007a43000080bf0000000000000000000000000000000000007ac30000a0c100007ac3000080bf00000000000000000000803f0000000000007ac30000a04100007a4300000000000000000000803f0000803f0000803f00007a430000a04100007a4300000000000000000000803f000000000000803f00007a430000a0c100007a4300000000000000000000803f000000000000000000007ac30000a0c100007a4300000000000000000000803f0000803f0000000000007a430000a04100007ac30000000000000000000080bf0000803f0000803f00007ac30000a04100007ac30000000000000000000080bf000000000000803f00007ac30000a0c100007ac30000000000000000000080bf000000000000000000007a430000a0c100007ac30000000000000000000080bf0000803f0000000000007a430000a04100007a430000803f00000000000000000000803f0000803f00007a430000a04100007ac30000803f0000000000000000000000000000803f00007a430000a0c100007ac30000803f0000000000000000000000000000000000007a430000a0c100007a430000803f00000000000000000000803f0000000000007ac30000a04100007ac3000000000000803f000000000000803f0000803f00007a430000a04100007ac3000000000000803f00000000000000000000803f00007a430000a04100007a43000000000000803f00000000000000000000000000007ac30000a04100007a43000000000000803f000000000000803f00000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 250, y: 20, z: 250}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimized: 0
 --- !u!1001 &1961461628
 Prefab:
   m_ObjectHideFlags: 0

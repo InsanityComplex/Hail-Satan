@@ -170,3 +170,10 @@ public class Dialogue
 		Action = act;
 	}
 }
+
+[Serializable]
+public class DialogueContainer
+{
+    public string Name;
+    public Dialogue[] Conversations;
+}
