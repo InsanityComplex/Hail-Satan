@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Shrine : MonoBehaviour {
+public class Radio : MonoBehaviour {
 
     private bool clickable = false;
     private bool MouseOnObject = false;
@@ -12,9 +12,9 @@ public class Shrine : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Start(){
+
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -31,7 +31,7 @@ public class Shrine : MonoBehaviour {
             clickable = false;
         }
     }
- 
+
     void OnMouseEnter()
     {
         MouseOnObject = true;
@@ -45,7 +45,8 @@ public class Shrine : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -65,10 +66,4 @@ public class Shrine : MonoBehaviour {
         }
 
     }
-
 }
-
-//get mouse position Input.mousePos
-//Ray r = Camera.main.ScreenPointToRay()
-//Phyiscs.Raycast(ray, out info)
-//do the thing
