@@ -11,6 +11,7 @@ public class Radio : MonoBehaviour {
     public bool on = false;
     public Dialogue[] Words;
     public bool UseAnimator;
+    public bool UseAudio;
 
     bool firstEnable;
     Animator anim;
@@ -54,7 +55,7 @@ public class Radio : MonoBehaviour {
                 }
             }
         }
-        if (on && !source.isPlaying)
+        if (on && UseAudio && !source.isPlaying)
         {
             if (!firstEnable)
             {
@@ -62,7 +63,7 @@ public class Radio : MonoBehaviour {
             }
             source.Play();
         }
-        else if (source.isPlaying && !on)
+        else if (UseAudio && source.isPlaying && !on)
         {
             source.Stop();
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
