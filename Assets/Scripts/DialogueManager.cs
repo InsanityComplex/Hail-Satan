@@ -80,9 +80,9 @@ public class DialogueManager : MonoBehaviour {
 		}
 	}
 
-	void EndDialogue() 
+	public void EndDialogue() 
 	{
-
+        Debug.Log("ending dialogue");
 		DialoguePanel.gameObject.SetActive(false);
 		ChoicePanel.gameObject.SetActive(false);
 		foreach (GameObject g in ObjectsToDisable) {

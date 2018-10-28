@@ -6,14 +6,19 @@ using UnityEngine.EventSystems;
 public class Radio : MonoBehaviour {
 
     private bool clickable = false;
-    private bool MouseOnObject = false;
+    public bool MouseOnObject = false;
 
     public bool on = false;
+    public Dialogue[] Words;
 
+    bool firstEnable;
     Animator anim;
+    AudioSource source;
     // Use this for initialization
     void Start(){
         anim = GetComponentInChildren<Animator>();
+        source = GetComponent<AudioSource>();
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -32,38 +37,40 @@ public class Radio : MonoBehaviour {
         }
     }
 
-    void OnMouseEnter()
-    {
-        MouseOnObject = true;
-        Debug.Log("Mouse On");
-    }
-
-    void OnMouseExit()
-    {
-        MouseOnObject = false;
-        Debug.Log("Mouse Off");
-    }
-
     // Update is called once per frame
     void Update()
     {
+        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit info;
 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Input.GetMouseButtonDown(0) && clickable)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (!on)
+            if (Physics.Raycast(mouseRay, out info, Mathf.Infinity, 1, QueryTriggerInteraction.Collide))
             {
-                on = true;
+                if (info.collider.gameObject.name == gameObject.name && clickable)
+                {
+                    on = !on; 
+                }
             }
-
-            else
-            {
-                on = false;
-            }
-
-            anim.SetBool("on", on);
         }
-
+        if (on && !source.isPlaying)
+        {
+            if (!firstEnable)
+            {
+                firstEnable = true;
+            }
+            source.Play();
+        }
+        else if (source.isPlaying && !on)
+        {
+            source.Stop();
+            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().EndDialogue();
+        }
+        anim.SetBool("on", on);
+        if (firstEnable && Words.Length > 0)
+        {
+            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(Words));
+            firstEnable = false;
+        }
     }
 }
