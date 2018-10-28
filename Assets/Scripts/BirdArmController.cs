@@ -13,7 +13,7 @@ public class BirdArmController : MonoBehaviour {
 	}
 	
 	
-	void Update () {
+	void FixedUpdate () {
         Vector3 mousePos = Input.mousePosition;
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 2));
         if (Input.GetMouseButtonDown(0))

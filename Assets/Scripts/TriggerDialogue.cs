@@ -15,12 +15,11 @@ public class TriggerDialogue : MonoBehaviour {
         {
             diaQueue.Enqueue(Words[i]);
         }
-        
-
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other);
         if (other.gameObject.CompareTag("Player"))
         {
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(diaQueue);
@@ -32,4 +31,5 @@ public class TriggerDialogue : MonoBehaviour {
     {
 
     }
+
 }
