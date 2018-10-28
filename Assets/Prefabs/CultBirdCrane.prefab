@@ -220,7 +220,7 @@ MonoBehaviour:
       Speaker: TJ
       Choices:
       - Excuse me!?!
-      - Why, aren;t you special
+      - Why, aren't you special
       - Does that even matter
     - Sentence: "I\u2019m just saying that I can tell when somebody is here for the
         attention."
@@ -234,7 +234,7 @@ MonoBehaviour:
       Choices:
       - Yeah yeah. I know what I'm doing
       - Fuck you!
-    - Sentence: 'Hmp! HE doesn''t seem to trust your intions '
+    - Sentence: 'Hmp! HE begs to differ! '
       Speaker: TJ
       Choices: []
     Audio: {fileID: 0}
