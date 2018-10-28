@@ -15,14 +15,13 @@ public class BookOpen : MonoBehaviour {
         if (collision.relativeVelocity.magnitude > OpenForce)
         {
             GetComponent<SpriteRenderer>().sprite = OpenState;
-            GetComponent<BoxCollider>().center = new Vector3(0.3f, 0.25f, 0f);
+            GetComponent<BoxCollider>().center = new Vector3(-.125f, 0.25f, 0.0125f);
             GetComponent<BoxCollider>().size = new Vector3(0.45f, 0.5f, .075f);
-            GetComponent<BoxCollider>().isTrigger = true;
             Open = true;    
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnParticleCollision(GameObject other)
     {
         if (other.transform.parent.name == "bird_wing_r" && !sent)
         {
