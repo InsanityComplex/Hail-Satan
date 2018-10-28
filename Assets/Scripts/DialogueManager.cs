@@ -29,14 +29,12 @@ public class DialogueManager : MonoBehaviour {
 
 	public void StartDialogue(Queue<Dialogue> queue) 
 	{
-		dialogueQueue = queue;
-        Phone.Show = true;
-        Debug.Log("Starting dialogue");
-	}
+        if (dialogueQueue != null)
+        {
+            return;
+        }
 
-    public void BeginDialogue()
-    {
-        DialoguePanel.gameObject.SetActive(true);
+        dialogueQueue = queue;
 
         foreach (GameObject g in ObjectsToDisable)
         {
@@ -46,6 +44,13 @@ public class DialogueManager : MonoBehaviour {
         {
             g.enabled = false;
         }
+
+        Phone.Show = true;
+	}
+
+    public void BeginDialogue()
+    {
+        DialoguePanel.gameObject.SetActive(true);
         NextDialogue();
     }
 
@@ -92,6 +97,7 @@ public class DialogueManager : MonoBehaviour {
 			g.enabled  = true;
 		}
         Phone.Show = false;
+        dialogueQueue = null;
     }
 
 	IEnumerator TextCrawl(Dialogue dia) 

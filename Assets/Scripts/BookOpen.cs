@@ -13,6 +13,8 @@ public class BookOpen : MonoBehaviour {
         if (collision.relativeVelocity.magnitude > OpenForce)
         {
             GetComponent<SpriteRenderer>().sprite = OpenState;
+            GetComponent<BoxCollider>().center = new Vector3(0.1f, 0.25f, 0f);
+            GetComponent<BoxCollider>().size = new Vector3(0.75f, 0.5f, .1f);
             Open = true;    
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move_8DOF : MonoBehaviour {
+public class Move_8DOF : GroupDisable {
 
     public float speed = 20.0f;
 
@@ -21,5 +21,10 @@ public class Move_8DOF : MonoBehaviour {
         heading += Physics.gravity;
         controller.Move(heading * Time.deltaTime);
 
+    }
+    private void OnDisable()
+    {
+        anim.SetInteger("Horizontal", 0);
+        anim.SetInteger("Vertical", 0);
     }
 }
