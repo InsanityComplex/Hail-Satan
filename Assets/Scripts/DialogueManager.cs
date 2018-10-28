@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public void NextDialogue() 
 	{
-		if (dialogueQueue.Count > 0) 
+		if (dialogueQueue != null && dialogueQueue.Count > 0) 
 		{
 			currentDialogue = dialogueQueue.Dequeue();
 			ChoicePanel.gameObject.SetActive(false);

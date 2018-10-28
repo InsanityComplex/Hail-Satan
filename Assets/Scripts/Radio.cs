@@ -70,9 +70,9 @@ public class Radio : MonoBehaviour {
                     {
                         dMan.EndDialogue();
                     }
-                    else if (on)
+                    else if (on || !(UseAnimator || UseAudio))
                     {
-                        if (currentConversation > Dialogues.Length)
+                        if (currentConversation >= Dialogues.Length)
                         {
                             dMan.StartDialogue(new Queue<Dialogue>(Default));
                         }
