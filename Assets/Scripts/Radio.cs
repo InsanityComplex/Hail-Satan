@@ -78,8 +78,10 @@ public class Radio : MonoBehaviour {
                     {
                         if (currentConversation >= Dialogues.Length)
                         {
-                            dMan.StartDialogue(new Queue<Dialogue>(Default));
-                            currentClip = DefaultAudio;
+                            currentConversation = 0;
+                            dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
+                            currentClip = Dialogues[currentConversation].Audio;
+                            currentConversation++;
                         }
                         else
                         {
