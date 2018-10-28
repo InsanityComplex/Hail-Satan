@@ -114,13 +114,104 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7a496f66eac73418cc967bbcc93ccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MouseOnObject: 0
-  on: 0
-  Words:
-  - Sentence: '*Snap*...*Snap*...*Snap*...'
-    Speaker: Snapping Bird
-    Choices:
-    - '...'
+  Default: []
+  DefaultAudio: {fileID: 0}
+  Dialogues:
+  - Name: Convo1
+    Conversations:
+    - Sentence: '*Snap* *Snap* *Snap*'
+      Speaker: Tommy
+      Choices: []
+    - Sentence: "\u2026\u2026"
+      Speaker: Tommy
+      Choices:
+      - "\u2026\u2026"
+    Audio: {fileID: 0}
+  - Name: Convo2
+    Conversations:
+    - Sentence: "\u2026\u2026"
+      Speaker: Tommy
+      Choices:
+      - "\u2026\u2026"
+    - Sentence: "If you could, like, hurry up and, like \u2026 make contact with all
+        of the shrines,"
+      Speaker: Tommy
+      Choices: []
+    - Sentence: That would be greeeeat.
+      Speaker: Tommy
+      Choices: []
+    - Sentence: Cause, like, I have a pizza in the oven with my name on it,
+      Speaker: Tommy
+      Choices: []
+    - Sentence: "And would love to go to some place-you know\u2026 not foresty."
+      Speaker: Tommy
+      Choices:
+      - Why did you drag me out here?
+      - What are we even doing here again?
+    - Sentence: Remember that mysterious text message told us to go into the woods
+        at midnight?
+      Speaker: Tommy
+      Choices: []
+    - Sentence: I think we gotta like touch stuff and shit.
+      Speaker: Tommy
+      Choices:
+      - Okay, but what kind of stuff?!?
+    - Sentence: "Spooky stuff\u2026"
+      Speaker: Tommy
+      Choices: []
+    Audio: {fileID: 0}
+  - Name: Convo3
+    Conversations:
+    - Sentence: "I\u2019ve been doing some research about this place and its interesting
+        how long this forest hasn\u2019t been touched."
+      Speaker: Tommy
+      Choices: []
+    - Sentence: These rumors about it, an incident in this forest last year,
+      Speaker: Tommy
+      Choices: []
+    - Sentence: Some lumberbirds tryin to clear part of the area went mad and killed
+        each other chanting demonic shit!
+      Speaker: Tommy
+      Choices:
+      - Wooooo! Spooooooky!
+      - Aw man, I knew this pace was cursed!
+      - Wicked!
+    - Sentence: "Hm, who knows\u2026"
+      Speaker: Tommy
+      Choices: []
+    - Sentence: "Maybe I\u2019ll go insane and try to murder you with these killer
+        snaps!"
+      Speaker: Tommy
+      Choices:
+      - I am terrified!
+      - Death by snaps. What a fitting end for me.
+    - Sentence: TJ on the other hand, oh boy...
+      Speaker: Tommy
+      Choices: []
+    - Sentence: I betcha he knows a 100 different ways to murder someone with coffee.
+      Speaker: Tommy
+      Choices:
+      - "That doesn\u2019t surprise me."
+    Audio: {fileID: 0}
+  - Name: Convo4
+    Conversations:
+    - Sentence: "Hehe, don\u2019t tell TJ, but I initially joined this cult cause
+        I thought it was cool and wanted to piss off my parents."
+      Speaker: Tommy
+      Choices:
+      - "Isn\u2019t that how we all got into this cult, including TJ."
+      - "I\u2019m not one to judge."
+    - Sentence: "I\u2019m mean I\u2019m still a heathan."
+      Speaker: Tommy
+      Choices: []
+    - Sentence: I'd yell "Fuck you, Jesus" off the top of my lungs.
+      Speaker: Tommy
+      Choices:
+      - Fuck you, Jesus!
+    - Sentence: Fuck you, Jesus!
+      Speaker: Tommy
+      Choices: []
+    Audio: {fileID: 0}
   UseAnimator: 0
   UseAudio: 0
 --- !u!135 &135175633749585070
