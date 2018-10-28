@@ -8,7 +8,7 @@ public class Radio : MonoBehaviour {
     private bool clickable = false;
     private bool MouseOnObject = false;
 
-    private bool on = false;
+    public bool on = false;
 
 
     // Use this for initialization
@@ -63,6 +63,8 @@ public class Radio : MonoBehaviour {
                 this.GetComponent<AudioSource>().Stop();
                 on = false;
             }
+
+            GetComponent<Animator>().SetBool("on", on);
         }
 
     }
