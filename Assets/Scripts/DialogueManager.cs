@@ -176,4 +176,5 @@ public class DialogueContainer
 {
     public string Name;
     public Dialogue[] Conversations;
+    public AudioClip Audio;
 }

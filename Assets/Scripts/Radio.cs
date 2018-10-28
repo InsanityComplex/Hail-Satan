@@ -6,11 +6,14 @@ using UnityEngine.EventSystems;
 public class Radio : MonoBehaviour {
 
     public Dialogue[] Default;
+    public AudioClip DefaultAudio;
     public DialogueContainer[] Dialogues;
     public bool UseAnimator;
     public bool UseAudio;
 
+
     int currentConversation;
+    AudioClip currentClip;
     bool clickable;
     bool on;
     bool setCompletition;
@@ -24,6 +27,7 @@ public class Radio : MonoBehaviour {
         anim = GetComponentInChildren<Animator>();
         source = GetComponent<AudioSource>();
         dMan = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
+        currentClip = DefaultAudio;
     }
 
     void OnTriggerEnter(Collider other)
@@ -75,10 +79,12 @@ public class Radio : MonoBehaviour {
                         if (currentConversation >= Dialogues.Length)
                         {
                             dMan.StartDialogue(new Queue<Dialogue>(Default));
+                            currentClip = DefaultAudio;
                         }
                         else
                         {
                             dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
+                            currentClip = Dialogues[currentConversation].Audio;
                             currentConversation++;
                         }
                         
@@ -91,6 +97,10 @@ public class Radio : MonoBehaviour {
                     }
                     else if (UseAudio && !source.isPlaying && on)
                     {
+                        if (source.clip != currentClip)
+                        {
+                            source.clip = currentClip;
+                        }
                         source.Play();
                     }
                 }
