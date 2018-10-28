@@ -20,7 +20,7 @@ public class BirdArmController : MonoBehaviour {
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(mousePos);
             RaycastHit info;
-            if (hand == null && Physics.Raycast(mouseRay, out info, Mathf.Infinity, Physics.AllLayers, QueryTriggerInteraction.UseGlobal) && info.rigidbody.gameObject.name == "bird_wing")
+            if (hand == null && Physics.Raycast(mouseRay, out info, Mathf.Infinity, Physics.AllLayers, QueryTriggerInteraction.UseGlobal) && info.rigidbody.gameObject.CompareTag("Player"))
             {
                 hand = info.rigidbody;
                 hand.gameObject.layer = 14;

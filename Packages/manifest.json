@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.cinemachine": "2.2.7",
     "com.unity.package-manager-ui": "1.9.11",
     "com.unity.postprocessing": "2.0.16-preview",
     "com.unity.shadergraph": "3.0.0-preview",

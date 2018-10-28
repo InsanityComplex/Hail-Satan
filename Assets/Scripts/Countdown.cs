@@ -46,7 +46,12 @@ public class Countdown : MonoBehaviour {
 
         if (currentObject >= Candles.Length || vignetteTimer > 10)
         {
-            //Game over.
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
 	}
+
+    void DisablePostProcessing()
+    {
+        Destroy(Post);
+    }
 }
