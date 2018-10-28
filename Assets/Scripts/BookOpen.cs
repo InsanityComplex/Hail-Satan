@@ -12,11 +12,12 @@ public class BookOpen : MonoBehaviour {
     bool sent;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.relativeVelocity.magnitude > OpenForce)
+        if (collision.relativeVelocity.magnitude > OpenForce && !Open)
         {
             GetComponent<SpriteRenderer>().sprite = OpenState;
             GetComponent<BoxCollider>().center = new Vector3(-.125f, 0.25f, 0.0125f);
             GetComponent<BoxCollider>().size = new Vector3(0.45f, 0.5f, .075f);
+            GetComponent<AudioSource>().Play();
             Open = true;    
         }
     }
