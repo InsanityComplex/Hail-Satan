@@ -173,7 +173,7 @@ MonoBehaviour:
     - Sentence: ' Even our majestic and powerful Ancestors, the Dinosaurs, fell victim
         to this tragedy. And because of that we rose out of their ashes that led to
         this!'
-      Speaker: 
+      Speaker: TJ
       Choices:
       - "TJ you\u2019re missing out on some HUGE gaps of history right there!"
       - I am completely lost in what you are trying to tell me
@@ -191,8 +191,8 @@ MonoBehaviour:
       Choices:
       - Who!?!
       - '"He"? who''s "He"?'
-    - Sentence: 
-      Speaker: 
+    - Sentence: '....'
+      Speaker: TJ
       Choices: []
     - Sentence: '....'
       Speaker: TJ
@@ -203,7 +203,7 @@ MonoBehaviour:
       Choices:
       - what are you even talking about!?!
     - Sentence: About what?
-      Speaker: 
+      Speaker: TJ
       Choices:
       - You mentioned a foreboding "He" is watching us
       - All that talk about our inevitable extinction!
@@ -232,9 +232,9 @@ MonoBehaviour:
         getting into... are you sure you know what you're doing
       Speaker: TJ
       Choices:
-      - yeah yeah , I know what I'm doing
-      - fuck you!
-    - Sentence: 'hmp! HE doesn''t seem to trust your intions '
+      - Yeah yeah. I know what I'm doing
+      - Fuck you!
+    - Sentence: 'Hmp! HE doesn''t seem to trust your intions '
       Speaker: TJ
       Choices: []
     Audio: {fileID: 0}
