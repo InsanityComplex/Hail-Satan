@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour {
 	public TextMeshProUGUI[] ChoiceTexts;
 	public Transform ChoicePanel;
 	public float CrawlTime;
+    public PhonePopUp Phone;
 
 	Coroutine textCrawl;
 	Queue<Dialogue> dialogueQueue;
@@ -29,17 +30,24 @@ public class DialogueManager : MonoBehaviour {
 	public void StartDialogue(Queue<Dialogue> queue) 
 	{
 		dialogueQueue = queue;
-		DialoguePanel.gameObject.SetActive(true);
-        
-		foreach (GameObject g in ObjectsToDisable) {
-			g.SetActive(false);
-		}
-		foreach (GroupDisable g in ScriptsToDisable) {
-			g.enabled  = false;
-		}
-        Cursor.lockState = CursorLockMode.None;
-        NextDialogue();
+        Phone.Show = true;
+        Debug.Log("Starting dialogue");
 	}
+
+    public void BeginDialogue()
+    {
+        DialoguePanel.gameObject.SetActive(true);
+
+        foreach (GameObject g in ObjectsToDisable)
+        {
+            g.SetActive(false);
+        }
+        foreach (GroupDisable g in ScriptsToDisable)
+        {
+            g.enabled = false;
+        }
+        NextDialogue();
+    }
 
 	public void NextDialogue() 
 	{
@@ -77,13 +85,13 @@ public class DialogueManager : MonoBehaviour {
 
 		DialoguePanel.gameObject.SetActive(false);
 		ChoicePanel.gameObject.SetActive(false);
-		Cursor.lockState = CursorLockMode.Locked;
 		foreach (GameObject g in ObjectsToDisable) {
 			g.SetActive(true);
 		}
 		foreach (GroupDisable g in ScriptsToDisable) {
 			g.enabled  = true;
 		}
+        Phone.Show = false;
     }
 
 	IEnumerator TextCrawl(Dialogue dia) 
