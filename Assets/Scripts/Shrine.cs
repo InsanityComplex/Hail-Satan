@@ -65,6 +65,8 @@ public class Shrine : MonoBehaviour {
                     on = false;
                 }
             }
+
+            GetComponent<Animator>().SetBool("on", on);
         }
 
     }

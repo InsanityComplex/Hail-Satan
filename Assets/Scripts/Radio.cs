@@ -10,10 +10,10 @@ public class Radio : MonoBehaviour {
 
     public bool on = false;
 
-
+    Animator anim;
     // Use this for initialization
     void Start(){
-
+        anim = GetComponentInChildren<Animator>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -54,17 +54,15 @@ public class Radio : MonoBehaviour {
         {
             if (!on)
             {
-                this.GetComponent<AudioSource>().Play();
                 on = true;
             }
 
             else
             {
-                this.GetComponent<AudioSource>().Stop();
                 on = false;
             }
 
-            GetComponent<Animator>().SetBool("on", on);
+            anim.SetBool("on", on);
         }
 
     }
