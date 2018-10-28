@@ -7,8 +7,7 @@ public class TriggerDialogue : MonoBehaviour {
     public Dialogue[] Words;
 
     Queue<Dialogue> diaQueue;
-   
-
+  
     public void Start()
     {
         diaQueue = new Queue<Dialogue>();
@@ -16,6 +15,7 @@ public class TriggerDialogue : MonoBehaviour {
         {
             diaQueue.Enqueue(Words[i]);
         }
+        
 
     }
 
@@ -25,7 +25,11 @@ public class TriggerDialogue : MonoBehaviour {
         {
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(diaQueue);
             Debug.Log("Allowing interaction");
-
         }
+    }
+
+    public void DisableThis()
+    {
+
     }
 }
