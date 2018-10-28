@@ -4874,7 +4874,7 @@ ParticleSystem:
     maxCollisionShapes: 250
     quality: 0
     voxelSize: 1
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -6722,7 +6722,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.39, y: 0.5, z: 0.01}
-  m_Center: {x: 0, y: 0.25, z: 0}
+  m_Center: {x: 0, y: 0.25, z: 0.0125}
 --- !u!54 &1742127831
 Rigidbody:
   m_ObjectHideFlags: 0
