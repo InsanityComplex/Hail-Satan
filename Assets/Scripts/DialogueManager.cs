@@ -115,6 +115,11 @@ public class DialogueManager : MonoBehaviour {
 		currentFullyDisplayed = true;
 	}
 
+    public bool IsDialogueActive()
+    {
+        return currentDialogue != null && dialogueQueue.Count > 0;
+    }
+
 	void Update() 
 	{
 		if (currentDialogue != null)

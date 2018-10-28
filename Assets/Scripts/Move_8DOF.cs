@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move_8DOF : GroupDisable {
+public class Move_8DOF : MonoBehaviour {
 
     public float speed = 20.0f;
 
