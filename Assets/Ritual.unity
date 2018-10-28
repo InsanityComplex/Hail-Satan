@@ -1512,11 +1512,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 224337738902417122, guid: 72923f03386700b48b41a2893786b566,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.000061035156
-      objectReference: {fileID: 0}
     - target: {fileID: 114156668593088442, guid: 72923f03386700b48b41a2893786b566,
         type: 2}
       propertyPath: m_havePropertiesChanged
