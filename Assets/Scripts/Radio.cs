@@ -72,7 +72,7 @@ public class Radio : MonoBehaviour {
 
                     if (dMan.IsDialogueActive() && !on)
                     {
-                        dMan.EndDialogue();
+                        //dMan.EndDialogue();
                     }
                     else if (on || !(UseAnimator || UseAudio))
                     {
