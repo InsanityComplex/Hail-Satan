@@ -11,7 +11,6 @@ public class Radio : MonoBehaviour {
     public bool UseAnimator;
     public bool UseAudio;
 
-
     int currentConversation;
     AudioClip currentClip;
     bool clickable;
@@ -46,67 +45,54 @@ public class Radio : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Interact()
     {
-        Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit info;
-
-        if (Input.GetMouseButtonDown(0))
+        on = !on;
+        if (UseAnimator)
         {
-            if (Physics.Raycast(mouseRay, out info, Mathf.Infinity, 1, QueryTriggerInteraction.Collide))
+            anim.SetBool("on", on);
+        }
+
+        if (!setCompletition)
+        {
+            GameObject.Find("Player").SendMessage("UpdateCompletition");
+            setCompletition = true;
+        }
+
+        if (dMan.IsDialogueActive() && !on)
+        {
+            //dMan.EndDialogue();
+        }
+        else if (on || !(UseAnimator || UseAudio))
+        {
+            if (currentConversation >= Dialogues.Length)
             {
-                if (info.collider.gameObject.name == gameObject.name && clickable)
-                {
-                    on = !on;
-                    if (UseAnimator)
-                    {
-                        anim.SetBool("on", on);
-                    }
-
-                    if (!setCompletition)
-                    {
-                        GameObject.Find("Player").SendMessage("UpdateCompletition");
-                        setCompletition = true;
-                    }
-
-                    if (dMan.IsDialogueActive() && !on)
-                    {
-                        //dMan.EndDialogue();
-                    }
-                    else if (on || !(UseAnimator || UseAudio))
-                    {
-                        if (currentConversation >= Dialogues.Length)
-                        {
-                            currentConversation = 0;
-                            dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
-                            currentClip = Dialogues[currentConversation].Audio;
-                            currentConversation++;
-                        }
-                        else
-                        {
-                            dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
-                            currentClip = Dialogues[currentConversation].Audio;
-                            currentConversation++;
-                        }
-                        
-                        firstEnable = false;
-                    }
-
-                    if (UseAudio && source.isPlaying && !on)
-                    { 
-                        source.Stop();
-                    }
-                    else if (UseAudio && !source.isPlaying && on)
-                    {
-                        if (source.clip != currentClip)
-                        {
-                            source.clip = currentClip;
-                        }
-                        source.Play();
-                    }
-                }
+                currentConversation = 0;
+                dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
+                currentClip = Dialogues[currentConversation].Audio;
+                currentConversation++;
             }
+            else
+            {
+                dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
+                currentClip = Dialogues[currentConversation].Audio;
+                currentConversation++;
+            }
+
+            firstEnable = false;
+        }
+
+        if (UseAudio && source.isPlaying && !on)
+        {
+            source.Stop();
+        }
+        else if (UseAudio && !source.isPlaying && on)
+        {
+            if (source.clip != currentClip)
+            {
+                source.clip = currentClip;
+            }
+            source.Play();
         }
     }
 }
