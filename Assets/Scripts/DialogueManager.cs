@@ -14,8 +14,10 @@ public class DialogueManager : MonoBehaviour {
 	public TextMeshProUGUI[] ChoiceTexts;
 	public Transform ChoicePanel;
 	public float CrawlTime;
+    public float SkipTime;
     public PhonePopUp Phone;
 
+    float timer;
 	Coroutine textCrawl;
 	Queue<Dialogue> dialogueQueue;
 	Dialogue currentDialogue;
@@ -58,6 +60,7 @@ public class DialogueManager : MonoBehaviour {
 	{
 		if (dialogueQueue != null && dialogueQueue.Count > 0) 
 		{
+            currentFullyDisplayed = false;
 			currentDialogue = dialogueQueue.Dequeue();
 			ChoicePanel.gameObject.SetActive(false);
 			Speaker.text = currentDialogue.Speaker;
@@ -85,6 +88,26 @@ public class DialogueManager : MonoBehaviour {
 		}
 	}
 
+    public void SkipToNext()
+    {
+        if (timer > SkipTime && !currentFullyDisplayed)
+        {
+            StopCoroutine(textCrawl);
+            if (currentDialogue.Action != null)
+            {
+                currentDialogue.Action();
+            }
+            EnableChoices();
+            Dialogue.text = currentDialogue.Sentence;
+            currentFullyDisplayed = true;
+            timer = 0f;
+        }
+        else if (currentFullyDisplayed)
+        {
+            NextDialogue();
+        }
+    }
+
 	public void EndDialogue() 
 	{
         foreach (GameObject g in ObjectsToDisable)
@@ -93,7 +116,7 @@ public class DialogueManager : MonoBehaviour {
         }
         foreach (GroupDisable g in ScriptsToDisable)
         {
-            g.enabled = true;
+            g.Active = true;
         }
         StopAllCoroutines();
 
@@ -131,6 +154,7 @@ public class DialogueManager : MonoBehaviour {
 
 	void Update() 
 	{
+        timer += Time.deltaTime;
 		if (currentDialogue != null)
 		{
 			if (Input.GetButtonDown("Submit")) 

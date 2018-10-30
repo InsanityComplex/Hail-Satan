@@ -6459,7 +6459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17bf6b46be0f00e4c8b59c36f8f1697c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Duration: 15
+  Duration: 5
 --- !u!111 &1470621456
 Animation:
   m_ObjectHideFlags: 0
@@ -6495,7 +6495,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cd0825c494ca27c47a3cea6c8a711b55, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e3926ae4459257a409972a7e1e5d0d02, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.771
   m_Pitch: 1
