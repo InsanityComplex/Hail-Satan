@@ -13,6 +13,7 @@ public class CheckPlayer : MonoBehaviour {
             UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
         else {
+            Debug.Log(other);
             GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(NotReady));
         }
     }

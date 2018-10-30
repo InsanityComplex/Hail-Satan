@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour {
         }
         foreach (GroupDisable g in ScriptsToDisable)
         {
-            g.enabled = false;
+            g.Active = false;
         }
 
         Phone.Show = true;

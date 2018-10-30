@@ -7,7 +7,6 @@ public class PlayerMovement : GroupDisable {
 
     public float Speed;
     public Animator Anim;
-
     NavMeshAgent agent;
     
 
@@ -26,6 +25,8 @@ public class PlayerMovement : GroupDisable {
 
     public void Move(Vector3 position)
     {
-        agent.SetDestination(position);
+        if (Active) {
+            agent.SetDestination(position);
+        } 
     }
 }
