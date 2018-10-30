@@ -155,21 +155,10 @@ public class DialogueManager : MonoBehaviour {
 	void Update() 
 	{
         timer += Time.deltaTime;
-		if (currentDialogue != null)
-		{
-			if (Input.GetButtonDown("Submit")) 
-			{
-				if (currentDialogue.Choices.Length > 0) 
-				{
-					//do nothing
-				}
-				else if (currentFullyDisplayed)
-				{
-					currentFullyDisplayed = false;
-					NextDialogue();
-				}
-			}
-		}
+		if (currentFullyDisplayed)
+        {
+            timer = 0f;
+        }
 	}
 
 }
