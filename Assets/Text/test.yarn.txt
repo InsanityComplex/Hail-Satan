@@ -1,0 +1,26 @@
+title: Start
+tags: 
+colorID: 0
+position: 550,146
+---
+This is a test Node
+
+[[Go to next node|NextNode]]
+[[No|No]]
+===
+title: NextNode
+tags: 
+colorID: 0
+position: 967,365
+---
+You made it!
+===
+title: No
+tags: 
+colorID: 0
+position: 200,403
+---
+Sorry, choose next node.
+
+[[Go back|Start]]
+===

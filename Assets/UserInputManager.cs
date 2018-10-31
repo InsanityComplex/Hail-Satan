@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UserInputManager : MonoBehaviour {
-
+public class UserInputManager : MonoBehaviour
+{
+    public DialogueUIManager DMan;
     public PlayerMovement Player;
-    public DialogueManager Dialogue;
     public LayerMask Mask;
     public Vector3 Offset;
 
@@ -24,29 +24,23 @@ public class UserInputManager : MonoBehaviour {
             isInteracting = Input.GetMouseButtonDown(0);
         }
 
-        if (isInteracting)
+        if (isInteracting && !DMan.IsDialogueActive())
         {
-            if (Dialogue.IsDialogueActive())
+            Debug.Log("in statement");
+            Ray interactRay = Camera.main.ScreenPointToRay(interactPos);
+            RaycastHit info;
+            if (Physics.Raycast(interactRay, out info, Mathf.Infinity, Mask, QueryTriggerInteraction.Ignore))
             {
-                Dialogue.SkipToNext();
-            }
-            else
-            {
-                Ray interactRay = Camera.main.ScreenPointToRay(interactPos);
-                RaycastHit info;
-                if (Physics.Raycast(interactRay, out info, Mathf.Infinity, Mask, QueryTriggerInteraction.Ignore))
-                {
-                    if (info.transform.gameObject.layer == 15)
-                    {
-                        info.transform.gameObject.SendMessage("Interact");
-                        Player.Move(info.transform.position - Offset);
-                    }
-                    else
-                    {
-                        Player.Move(info.point);
-                    }
+                if (info.transform.gameObject.layer == 15) {
+                
+                    Player.Move(info.transform.position - Offset);
+                    info.transform.gameObject.SendMessage("Interact");
                 }
-            }
+                else
+                {
+                    Player.Move(info.point);
+                }
+            } 
         }
     }
 }

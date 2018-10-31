@@ -1,0 +1,109 @@
+title: Tommy
+tags: 
+colorID: 0
+position: 173,203
+---
+<<if $Tommy_visit is 0>>
+    Tommy: *SNAP* *SNAP* *SNAP*
+    -> ...
+    <<set $Tommy_visit to 1>>
+<<elseif $Tommy_visit is 1>>
+    Tommy: If you could like, hurry up and like… make contact with all of the shrines that would be greeeeat. 
+    Tommy: Cause like, I have a pizza in the oven with my name on it and would love to go to some place-you know… \
+    Tommy: not foresty.
+    -> Why did you drag me out here?
+    -> What are we even doing here again?
+    Tommy: Remember that mysterious text message told us to go into the woods at midnight?
+    Tommy: I think we gotta like–touch stuff or some shit.
+    -> Okay, but what kind of stuff?!?
+    Tommy: Spooky stuff...
+    <<set $Tommy_visit to 2>>
+<<elseif $Tommy_visit is 2>>
+    Tommy: I’ve been doing some research about this place and its interesting how long this forest hasn’t been touched. 
+    Tommy: These rumors about it, an incident in this forest last year, some lumberbirds tryin to clear part of the area went mad and killed each other chanting demonic shit!
+    -> Wooooo! Spoooky!
+    -> Aw man, I knew this place was cursed!
+    -> Wicked!
+    Tommy: Hm, who knows…maybe I’ll go insane and try to murder you with these killer snaps!
+    -> I am terrified!
+    -> Death by snaps, what a fitting end for me.
+    Tommy: TJ on the other hand, oh boy, I betcha he knows a 100 different ways to murder someone with coffee.
+    -> That doesn't surprise me.
+    <<set $Tommy_visit to 3>>
+<<elseif $Tommy_visit is 3>>
+    Tommy: Hehe, don’t tell TJ, but I initially joined this cult cause I thought it was cool and wanted to piss off my parents. 
+    -> Isn't that how we all got into this cult, including TJ?
+    -> I'm not one to judge.
+    Tommy: I’m mean I’m still a heathan, I'd yell "Fuck you jesus" off the top of my lungs.
+    -> Fuck you, Jesus!
+        Tommy: Fuck you, Jesus!
+    -> FUCK YOU JESUS!
+        Tommy: FUCK YOU JESUS!
+    <<set $Tommy_visit to 4>>
+<<elseif $Tommy_visit is 4>>
+    Tommy: What are you still doing here? Aren't you supposed to be activating the shrines?
+    -> I guessssss
+<<endif>>
+    
+===
+title: TJ
+tags: 
+colorID: 0
+position: 595,246
+---
+<<if $TJ_visit is 0>> 
+    TJ: Hey, I don't usually summon demons before my coffee break, but today of all days is different...
+    -> Different how?
+    -> I'm not sure I'm catching your drift?
+    -> I'm sorry, what?!?
+    TJ: That damn barista got my order wrong! It's a double caramel moccahiato with extra virgin blood! And she forgot the blood! Like the bloods the best part or why even bother to pay the extra soul contract  to get! I might as well get freak\u2019n regular double caramel moccahiato! I ordered it because today of all days is different!
+    -> But HOW is today different!?!
+    -> That sounds like a personal problem, you should take that up with my secretary.
+    TJ: You don't get it! She never gets my order wrong! I can just feel it in my bones that somethings going to end.
+    TJ: Its the voices, they whisper around these woods and nothing turns alright in the end. Find the radio and you'll see what I mean!
+    <<set $TJ_visit to 1>>
+<<elseif $TJ_visit is 1>>
+    TJ: So while I was drinking this cup of TERRIBLE coffee, it occurred to me, what if this ritual cost us? Like not just you, me and Tommy but the entire living bird race?
+    -> Not now TJ! I don't have time for this!
+    -> Oh lord, where are you going with this?
+    TJ: But! You see, there have been thousands of mass extinctions on this planet before we were born! Our earliest records foretold them spanning millions of years ago.
+    TJ: From what we know more than 90% of all organisms that ever lived on Earth are extinct as new species evolve to fit the ever changing ecological niches.
+    TJ: Creatures lives ending without an ycomprehension of how they were dying out. No control on how they were going to die.
+    TJ: Even our majestic and powerful ancestors, the dinosaurs, fell victim to this tragedy. And it's because we rose out of their ashes that we're here.
+    -> TJ you're missing onut on some HUGE gaps of history right there!
+    -> I am completely lost in what you are trying to tell me.
+    TJ: This ritual is a choice, Carrie. Maybe it's the only significant choice we'll ever get to make, in comparison to other kinds of inevitable extinction!
+    TJ: If we do die, I prefer this, than dying at the hands of nuclear war!
+    -> Well you must be a joy at parties, TJ.
+    -> Oh joy, glad to know you're with us.
+    TJ: He is calling us.
+    -> Who?
+    -> "He"? Who's "He"?
+    TJ: ...
+    Tj: ....
+    -> Uh, HELLO?!?
+    TJ: Huh?
+    -> What are you even talking about?!?
+    TJ: About what?
+    -> You mentioned a foreboding "He" is watching us
+    -> All that talk about our inevitable extinction!
+    TJ: I don't recall talking to you abot that. Yea, that last thing I told you was to look for the radio
+    -> ...
+    <<set $TJ_visit to 2>>
+<<elseif $TJ_visit is 2>>
+    TJ: I don't mean ot brag but I've been a member of this cult before it was cool.
+    -> Excuse me!?!
+    -> Why, aren't you special.
+    -> Does that even matter?
+    TJ: I'm just saying that I can tell when somebody is here just for the attention.
+    -> Are you sure you didn't just describe yourself?
+    -> Why does this even matter?
+    TJ: People sign up into some weird shit without knowing what they're getting into... are you sure you know what you're doing?
+    -> Yeah, yeah. I know what I'm doing.
+    -> Fuck you!
+    TJ: Hmph! HE begs to differ!
+    <<set $TJ_visit to 3>>
+<<elseif $TJ_visit is 3>>
+    TJ: Why are you still talking to me? Go find the radio.
+<<endif>>
+===

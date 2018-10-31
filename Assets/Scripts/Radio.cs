@@ -5,9 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Radio : MonoBehaviour {
 
-    public Dialogue[] Default;
-    public AudioClip DefaultAudio;
-    public DialogueContainer[] Dialogues;
+    public string NodeName;
     public bool UseAnimator;
     public bool UseAudio;
 
@@ -20,29 +18,12 @@ public class Radio : MonoBehaviour {
 
     Animator anim;
     AudioSource source;
-    DialogueManager dMan;
+    Yarn.Unity.DialogueRunner runner;
 
     void Start(){
         anim = GetComponentInChildren<Animator>();
         source = GetComponent<AudioSource>();
-        dMan = GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>();
-        currentClip = DefaultAudio;
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.name == "Player")
-        {
-            clickable = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.name == "Player")
-        {
-            clickable = false;
-        }
+        runner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
     }
 
     void Interact()
@@ -59,26 +40,9 @@ public class Radio : MonoBehaviour {
             setCompletition = true;
         }
 
-        if (dMan.IsDialogueActive() && !on)
-        {
-            //dMan.EndDialogue();
-        }
         else if (on || !(UseAnimator || UseAudio))
         {
-            if (currentConversation >= Dialogues.Length)
-            {
-                currentConversation = 0;
-                dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
-                currentClip = Dialogues[currentConversation].Audio;
-                currentConversation++;
-            }
-            else
-            {
-                dMan.StartDialogue(new Queue<Dialogue>(Dialogues[currentConversation].Conversations));
-                currentClip = Dialogues[currentConversation].Audio;
-                currentConversation++;
-            }
-
+            runner.StartDialogue(NodeName);
             firstEnable = false;
         }
 

@@ -14,7 +14,7 @@ public class CheckPlayer : MonoBehaviour {
         }
         else {
             Debug.Log(other);
-            GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(NotReady));
+            //GameObject.Find("Dialogue Manager").GetComponent<DialogueManager>().StartDialogue(new Queue<Dialogue>(NotReady));
         }
     }
 }

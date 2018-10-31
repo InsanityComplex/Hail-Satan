@@ -13,8 +13,8 @@ position: 58,341
     When you eat Little Baby's Ice Cream, you'll jump and dance and sing and hug eachother with great enthusiam.
     This is a special time.
     Little Baby's Ice Cream
-<<set $TV_visit to 1>>
-<<else if $TV_visit is 1>>
+    <<set $TV_visit to 1>>
+<<elseif $TV_visit is 1>>
     I'm Ants in my Eyes Johnson here at Ants in my Eyes Johnson Electronics!
     I mean, there's so many ants in my eyes and there's so many TV's, microwaves, radios... I think.
     I'm not 100% sure what we have in stock because I can't see anything!
@@ -22,14 +22,14 @@ position: 58,341
     I'm Ants in my Eyes Johnson!
     Everything's black. I can't see a thing.
     And I can't feel anything, but that's not as catchy.
-<<set $TV_visit to 2>>
-<<else if $TV_visit is 2>>
+    <<set $TV_visit to 2>>
+<<elseif $TV_visit is 2>>
     Police have reported the disapperance five teenagers,
     All of whom were last seen entering Burnt Chapel Forest.
     Search parties have been active as of last night. 
     For your saftey, we advise everyone to stay out of the w-
     (The transmition cuts to black.)
-<<set $TV_visit to 0>>
+    <<set $TV_visit to 0>>
 <<endif>>
 ===
 title: Radio

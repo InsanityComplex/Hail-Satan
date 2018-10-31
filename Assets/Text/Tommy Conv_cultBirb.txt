@@ -14,7 +14,7 @@ Tommy Conv 1:
 	- “Why did you drag me out here?” 
 	- “What are we even doing here again?”
 
-“Remember that mysterious text message told us to go into the woods at midnight, and I think we gotta like–touch stuff or some shit”
+	“Remember that mysterious text message told us to go into the woods at midnight, and I think we gotta like–touch stuff or some shit”
 
 	- “Okay, but what kind of stuff?!?”
 
@@ -23,12 +23,12 @@ Tommy Conv 1:
 (end of conversation 2)
 
 Tommy Convo 3:
-I’ve been doing some research about this place and its interesting how long this forest hasn’t been touched. These rumors about it, an incident in this forest last year, some lumberbirds tryin to clear part of the area went mad and killed each other chanting demonic shit!
+
 	- wooooo! spooooooky!
 	- aw man, I knew this pace was cursed!
 	-Wicked!
 
-Hm, who knows…maybe I’ll go insane and try to murder you with these killer snaps!
+-
 
 	- I am terrified!
 	- Death by snaps, what a fitting end for me!
