@@ -1,0 +1,45 @@
+title: Branching.Test
+tags: 
+colorID: 0
+position: 556,43
+---
+Hello and welcome to the branching dialogue test
+
+[[Option 1|Option1]]
+[[Choice 2|Choice2]]
+[[Decision 3|Decision3]]
+===
+title: Option1
+tags: 
+colorID: 0
+position: 211,466
+---
+I'm so glad you chose option 1. I'm a very good option.
+
+[[Converge]]
+===
+title: Choice2
+tags: 
+colorID: 0
+position: 560,460
+---
+yo choice 2 is the worst. why did you pick this
+
+[[Converge]]
+===
+title: Decision3
+tags: 
+colorID: 0
+position: 852,463
+---
+Decision 3 is ok. Just ok.
+
+[[Converge]]
+===
+title: Converge
+tags: 
+colorID: 0
+position: 559,744
+---
+And your choices have converged on one option. Congratulations!
+===
